@@ -1,0 +1,326 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/*
+ HTML5 display-role reset for older browsers 
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+*/
+body {
+    display:grid;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* prasideda mano css */
+
+html, body {
+    margin: 0 auto;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #1a1a1a;
+/*    font-family: 'Open Sans', sans-serif;*/
+        font-family: 'Lora', serif;
+}
+
+img {
+    object-fit: cover;
+}
+
+
+/*turinio pradžia */
+
+
+.turinys {
+    display: flex;
+    height: auto;
+    margin-top: 40px;
+    margin-right: 45px; /* turinio apiforminimas */
+    margin-left: 40px;
+    margin-bottom: 100px;
+    flex-direction: column;
+   
+}
+
+.kolekcijos {
+    display: flex;
+    flex-direction: row;
+}
+
+.id {
+
+     width: 30%;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.foto, .foto2 {
+    width: 100%;
+    height: 450px;
+    display: block;
+    transition: 0.5s ease;
+    opacity: 1;
+}
+
+
+
+.new {
+    color:white;
+    font-family: 'Lora', serif;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+h2:hover {
+    text-decoration: underline;
+}
+
+h3:hover {
+    text-decoration: underline;
+}
+
+
+.nuoroda:hover {
+    text-decoration: underline;
+}
+
+
+h2{
+    font-size: 27px;
+}
+
+h3 {
+    font-size: 23px;
+}
+
+p {
+    color: #b3b3b3;
+    font-size: 16px;
+}
+
+.new p:hover {
+    color: white;
+}
+
+.nuoroda {
+    font-size: 16px;
+    color: white;
+     margin-bottom: 50px;
+    width: auto;
+    display: flex;
+    align-self: flex-end;
+}
+
+
+/* slider pradzia*/
+.wrapper2 {
+    width: auto;
+    height: 400px;
+}
+
+.slides-container2 {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    justify-content: center;
+
+}
+
+.slide-image2, .slide-image3 {
+    height: 100%;
+    width: 100%;
+    display:grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 150px 150px;
+    grid-gap:3px;
+    text-align: center;
+}
+/*
+
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background: rgba(205, 202, 202, 0.29);
+    
+}
+
+
+
+
+/* slider pabaiga*/
+
+.slide-image2 .slideshow {
+    position: relative;
+    box-sizing: border-box;  
+}
+
+.slide-image2 .slideshow .details {
+    position: absolute;
+    top:5px;
+    left:5px;
+    bottom:5px;
+    right: 5px;
+    background: rgba(205, 202, 202, 0.5);
+    visibility: hidden;
+    transform: scale(1);
+}
+
+.slide-image2 .slideshow:hover .details {
+   visibility: visible;
+    cursor: pointer;
+}
+
+
+.slide-image3 .slideshow {
+    position: relative;
+    box-sizing: border-box;  
+}
+
+.slide-image3 .slideshow .details {
+    position: absolute;
+    top:5px;
+    left:5px;
+    bottom:5px;
+    right: 5px;
+    background: rgba(205, 202, 202, 0.5);
+    visibility: hidden;
+    transform: scale(1);
+}
+
+.slide-image3 .slideshow:hover .details {
+   visibility: visible;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 1218px) {
+    
+
+    .text {  
+    top:350px;
+    }
+    
+    .text2 {
+    left: 80px;
+    }
+    
+    .nxt-btn {
+    margin-right: auto;
+    position:relative;
+    left: 0;
+    right: 0;
+    margin-right: 0px;
+    margin-left: 380px;
+}
+    @media only screen and (max-width: 1000px) {
+    
+
+        .kolekcijos {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .id {
+            width: 100%;
+            margin-left: 0px;
+        }
+    
+}
+
+@media only screen and (max-width: 660px) {
+    
+    
+    
+    .turinys, .turinys2, .turinys3 {
+        display:flex;
+        flex-direction: column;
+    }
+    
+    .dezes{
+        height: 350px;
+        margin-bottom: 100px;
+    }
+    
+     .text, .text2 {  
+         width: auto;
+         left: 50px;
+    }
+    
+
+    
+    
+    
+}
+    
+@media only screen and (max-width: 520px) {
+    max
+    .turinys, .turinys2, .turinys3, p, li, .banner {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .id {
+        margin-left: 0px;
+    }
+    
+     .text, .text2 {  
+         width: auto;
+         left: 10px;
+    }
+    
+    .ready2 {
+        display: none;
+    }
+ 
+    
+        .nxt-btn {
+    margin-left: 260px;
+}
+     .turinys {
+        margin-left: 10px;
+        margin-right: 10px;
+
+    
+}
+    
+    
+}
+

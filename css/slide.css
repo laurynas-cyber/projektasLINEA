@@ -1,0 +1,237 @@
+.slides-container {
+    height: 45px;
+    background-color: white;
+    position: relative;
+    width: 350px;
+    transition: 0.5s ease;
+    margin-top:5px
+}
+
+.wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide-image {
+
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+}
+
+
+
+.nxt-btn,
+.prvs-btn {
+    position: absolute;
+    top:20%;
+    z-index: 1;
+}
+
+.prvs-btn {
+    left: 50;
+    margin-left: 7px;
+   
+}
+
+.nxt-btn {
+    right: 0;
+    margin-right: 7px;
+   
+}
+
+/* banner pradzia */ 
+.banner {
+    color:white;
+    margin-right: 50px; /* turinio apiforminimas */
+    margin-left: 50px;
+    margin-top:90px;
+    width: auto;
+    height: 500px;
+    padding: 0;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    z-index: 1;
+    top:450px;
+    font-size: 30px;
+    left: 80px;
+     font-family: 'Lora', serif;
+    max-width: 500px;
+    width: 100%;
+}
+
+.relative {
+    position: relative;
+    height: 100%;
+}
+
+.box {
+    flex-direction: row;
+    background-color:  opacity: 0.5;
+    margin-top:20px;
+    background: rgba(205, 202, 202, 0.29);
+    height: 50px;
+    width: 100%;
+
+}
+
+.container > * {
+    margin-right: 20px;
+   
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.ready {
+    color:black;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.ready:hover {
+    text-decoration: underline;
+}
+
+.line2 {
+    border: solid 0.5px black;
+    height: 20px;
+}
+
+
+.text2 {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top:500px;
+    font-size: 30px;
+    right: 100px;
+     font-family: 'Lora', serif;
+}
+
+
+.box2 {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.ready2 {
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: #1a1a1a;
+    padding:15px;
+    padding-top: 10px;
+    margin-top:5px;
+}
+
+.ready2:hover {
+    text-decoration: underline;
+}
+
+
+
+#arrow, #arrow2 {
+    font-size: 25px;
+    color: black;
+}
+
+
+
+#arrow:hover {
+    cursor: pointer;
+    transform: translateX(5px);
+    transition: 0.5s ease;
+}
+
+
+
+#arrow2:hover {
+    cursor: pointer;
+    transform: translateX(-5px);
+    transition: 0.5s ease;
+     
+}
+/* banner pabaiga */
+
+
+@media only screen and (max-width: 1218px) {
+    
+
+    .text {  
+    top:350px;
+    }
+    
+    .text2 {
+    left: 80px;
+    }
+    
+    .nxt-btn {
+    margin-left: 450px;
+}
+    
+}
+
+@media only screen and (max-width: 660px) {
+    
+    
+
+    
+     .text, .text2 {  
+         width: auto;
+         left: 50px;
+    }
+    
+    .ready2 {
+        display: none;
+    }
+    
+     
+    .nxt-btn {
+    margin-left: 320px;
+    
+}
+    .nxt-btn, .prvs-btn {
+    transform: translateY(-10%);
+    }
+
+    
+    
+    
+}
+    
+@media only screen and (max-width: 520px) {
+    
+    .turinys, .turinys2, .turinys3, p, li, .banner {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+     .text, .text2 {  
+         width: auto;
+         left: 10px;
+         max-width: 100%;
+    }
+    
+    .text2 {
+        display: none;
+    }
+    
+    
+  
+    
+    
+}

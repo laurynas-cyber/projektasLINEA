@@ -1,0 +1,118 @@
+body{
+   background-color: #1a1a1a;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.2;
+}
+
+
+
+#white {
+    margin-right: 50px; /* turinio apiforminimas */
+    margin-left: 50px;
+    background-color:white;
+    height: auto;
+    margin-top:70px;
+}
+
+
+#go {
+    padding:50px;
+}
+
+#line {
+    border: 1px solid black;
+    width: 45px;
+    margin-bottom: 20px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+img {
+    margin-right: 20px;
+}
+
+.container a {
+    color: black;
+    text-decoration: none;
+}
+
+.container a:hover {
+   text-decoration:underline;
+}
+
+
+.container p {
+    line-height: 1.5;
+    margin-bottom: 0px;
+}
+
+.bars {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.change {
+    background-color: #1a1a1a;
+    margin:0px;
+    color: white;
+    padding:10px 20px;
+    text-decoration: none;
+}
+
+.change:hover {
+    text-decoration: underline;
+}
+
+#style:hover {
+    text-decoration: none;
+}
+
+
+
+#arrow {
+    margin-left:10px;
+    color: black;
+    font-size: 18px;
+}
+
+#arrow:hover {
+    cursor: pointer;
+    transform: translateX(5px);
+}
+
+#arrow2 {
+    margin-right:10px;
+    color: black;
+    font-size: 18px;
+}
+
+#arrow2:hover {
+    cursor: pointer;
+    transform: translateX(-5px);
+}
+
+
+
+@media only screen and (max-width: 660px) {
+    #white {
+        margin-left:10px;
+        margin-right: 10px;
+    }   
+    
+    #go {
+        padding:10px;
+    }
+    
+    .flex {
+        flex-direction: column;
+    }
+    
+    img {
+        max-width: 200px;
+    }
+}

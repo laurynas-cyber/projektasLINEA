@@ -1,0 +1,108 @@
+body{
+   background-color: #1a1a1a;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.2;
+}
+
+#white {
+    margin-right: 50px;
+    margin-left: 50px;
+    background-color:white;
+    height: auto;
+    margin-top:70px;
+}
+
+#go {
+    padding:50px;
+    
+}
+
+#turinys {
+    margin-left: 0px;
+}
+
+#line {
+    border: 1px solid black;
+    width: 45px;
+    margin-right: 1px;
+    margin-left: 0px;
+}
+
+p { 
+    height: auto;
+    line-height: 1.2;
+}
+
+.bull {
+    margin-left: 20px;
+}
+
+.bull li {
+    margin-bottom: 10px;
+}
+
+
+
+/* naujienos html pradzia */
+
+.flex {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+     margin-left: 0px;
+}
+
+
+.aprasymas {
+    margin-left: 20px;
+}
+
+h2 {
+    margin-top:0px;
+}
+
+.plotis {
+    min-width:550px;
+    max-height: 600px;
+}
+
+
+
+@media only screen and (min-width: 1500px) {
+    .plotis {
+        max-width: 800px;
+    }
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+    .flex {
+        display: inline-flex;
+        flex-direction: column;
+        width: auto;
+    }
+    
+    .aprasymas {
+        margin-left:0px;
+    }
+    
+}
+
+
+@media only screen and (max-width: 730px) {
+    #white {
+        margin-left:10px;
+        margin-right: 10px;
+    }   
+    
+    #go {
+        padding:10px;
+    }
+    
+    .plotis {
+      min-width: auto;   
+        height: auto;
+    }
+
+}

@@ -1,0 +1,549 @@
+
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+ HTML5 display-role reset for older browsers 
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    display:grid;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* prasideda mano kodas */
+
+html, body {
+    margin: 0 auto;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #1a1a1a;
+}
+
+
+/* navigacija */
+
+header {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    position:fixed;
+    background-color: #1a1a1a;
+    width: 100%;
+    height: 80px;
+    z-index: 40;
+
+
+}
+
+#container {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#container p {
+    line-height: 1;
+}
+
+#produkcija {
+   margin-left: 0px;
+}
+
+
+
+.logo {
+    font-family: 'Lora', serif;
+    margin-left: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    font-weight: 700;
+    margin-right: 30px;
+     color: white;
+    text-decoration: none;
+}
+
+.veikla {
+    font-size: 13px;
+    color: #b3b3b3;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 0px;
+}
+
+
+
+#navigacija {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    font-size: 13px;
+    font-weight: 700;
+    align-items: center;
+    margin-right: 10px;
+}
+
+#apie i {
+        display: none;
+    }
+
+#produkcija i {
+        display: none;
+    }
+
+#navigacija:hover a {
+    color:#b3b3b3;
+}
+
+#navigacija a:hover {
+    color:white;
+}
+
+.new3 {
+    text-decoration: none;
+    color:white;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+
+
+#move {
+    transform:translateX(10%);
+}
+
+
+/*
+
+#navigacija > li,div {
+    margin-left: 10px;
+}
+*/
+
+
+#navigacija div {
+    margin-left: 10px;
+}
+
+#navigacija li {
+    margin-left: 10px;
+}
+
+.fa-search {
+    color: white;
+}
+
+#meniu {
+    padding-left: 5px;
+    color: white;
+    padding-top:7px;
+    padding-bottom: 7px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+
+}
+
+#responsive_nav {
+    display: inline-flex;
+    font-size: 13px;
+    align-items: center;
+    margin-left: 0px;
+}
+
+#responsive_nav li {
+    margin-right: 10px;
+}
+
+#line3 {
+    border: 1px solid white;
+    height: 13px;
+    margin-left: 5px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 45px;
+}
+
+/* dropdown */
+
+
+
+#dropdown-menu {
+    display: none;
+    position: absolute; 
+    z-index: 90; 
+    background-color: #262626;
+    margin-top:0px;
+    margin-left: 15px;
+    width: 150px;
+    font-size: 10px;
+}
+
+
+#dropdown-menu a {
+    text-decoration: none;
+    color: #b3b3b3;
+    margin: 15px;
+}
+
+#dropdown-menu li {
+    line-height: 1;
+        font-family: 'Open Sans', sans-serif;
+}
+
+.abu li {
+    line-height: 1;
+}
+
+.first {
+    padding-top: 15px;
+}
+
+#dropdown-menu a:hover {
+    color: white;
+}
+
+#dropdown-menu > li {
+    margin: 15px; 
+}
+
+.apie:hover #dropdown-menu {
+    display: block;
+}
+
+
+
+#produkcija:hover #dropdown-menu {
+    display: block;
+    cursor: pointer;
+}
+
+
+#burger {
+    display:none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 1s ease 1s;
+    padding: 0px;
+}
+
+/*
+#burger:hover {
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg); 
+  transform: rotateX(-90deg);
+    transform: rotate(-90deg);
+    transition: 1s ease 1s;
+}
+*/
+
+/* header pabaiga footer pradzia */
+
+#pabaiga {
+    background-color:#333333;
+    color: white;
+    font-size:22px;
+    height: auto;
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-top: 100px;
+    
+}
+
+#bot {
+    border-bottom: solid 1px #737373;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: auto;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 50px;
+}
+
+.two {
+    color:white;
+    display: flex;
+    flex-direction: column;
+    margin-top:50px;
+    margin-left: 0px;
+}
+
+.abu {
+    font-size:13px;
+    margin-top:10px;
+    width: auto;
+    max-height: 150px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+.abu a {
+    text-decoration: none;
+    color:white;
+    margin-left: 10px;
+}
+
+.abu li {
+    margin-top:10px;
+    color: #b3b3b3;
+}
+
+.abu:hover a{
+    color: #b3b3b3;
+}
+
+
+
+.abu a:hover {
+    color: white;
+}
+
+#stulpeliai{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#stulpeliai2 {
+    margin-right: 150px;
+}
+
+#socialmedia {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.social {
+    margin-top: 20px;
+    font-size: 35px;
+    cursor: pointer;
+    margin-left: 0px;
+    margin-right: 10px;
+}
+
+.social a {
+        color:#737373;
+}
+
+.social a:hover {
+    color: #b3b3b3;
+}
+
+#copy {
+    font-size:12px;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 55px;
+    margin-top:15px;
+    padding-bottom: 50px;
+}
+
+footer{
+    margin-bottom: 40px;
+}
+
+
+
+
+/*burger menu*/
+
+    transform: translateX(50%);
+    transition: transform 1s;
+*/
+}
+
+/*----------------------*/
+/*----------------------*/
+/*----------------------*/
+
+
+@media only screen and (max-width: 1200px) {
+    
+   
+    
+    #stulpeliai2 {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+     
+ 
+}
+
+@media only screen and (max-width: 1200px) {
+     #container p {
+    display: none;
+    }
+}
+
+@media only screen and (max-width: 940px) {
+    
+    
+    
+    .apie {
+        max-width: 200px;
+        
+    }
+
+
+    
+    #navigacija a {
+        color:black;
+        font-size: 18px;
+    }
+    
+    #navigacija:hover a {
+    color:black;
+}
+    
+    #navigacija li {
+        margin-left: 5px;
+        margin-top: 20px;
+    } 
+    
+    #navigacija li i {
+         display:inline-block;
+        color: black;
+        margin-right: 5px;
+        transform: translateY(-20%);
+    }
+    
+    
+    #move {
+    transform:translateX(0%);
+}
+
+    #burger {
+    display:block;
+}
+    
+    #navigacija {
+        display: block;
+        position: absolute;
+        background-color: white;
+        width: 100%;
+        min-height: 300px;
+        height: auto;
+/*        transform: translateX(-83%);*/
+        left: -100%;
+        top:70px;
+        margin: 0;
+    }
+    
+    header #navigacija.active {
+        left:0px;
+    }
+
+    
+#dropdown-menu {
+    display: none;
+    position: relative; 
+    background-color: white;
+    width: auto;
+}
+
+
+#dropdown-menu a {
+    color: black;
+    font-size: 15px;
+}
+
+
+    
+    #bot{
+        flex-direction: column;
+    }
+    
+    #stulpeliai2 {
+        flex-wrap: wrap;
+        height: 50px;
+        margin-right: 60px;
+        
+    }
+    
+    #copy{
+        margin-left: 20px;
+    }
+    
+    
+}
+
+
+@media only screen and (max-width: 750px) {
+    
+    #meniu {
+    display: none;
+}
+    
+    #line3 {
+        display: none;
+    }
+    
+    
+    #stulpeliai {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+    
+    
+}
+
+
+@media only screen and (max-width: 520px) {
+    
+      #pabaiga {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+   
+    #stulpeliai {
+        margin-right: 0px;
+    }
+   
+    #stulpeliai2 {
+        margin-right: -10px;
+    }
+    
+    .container {
+        margin-left: 0px;
+    }
+    
+    
+}

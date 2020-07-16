@@ -1,0 +1,445 @@
+body {
+     background-color: #1a1a1a;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1;
+}
+
+#turinys {
+    margin-right: 45px; /* turinio apiforminimas */
+    margin-left: 45px;
+    margin-top:70px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.flex {
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#vilnius {
+    width: 100%;
+    max-height: 400px;
+    
+}
+
+#foto, .foto2 {
+    width: 50%;
+}
+
+
+.map0 {
+    
+    width: 50%;
+    
+}
+
+
+.map1 {
+    width: 100%;
+    height: 240px;
+}
+
+.foto2{
+    
+   width: 100%;
+    overflow: hidden;
+}
+
+
+#grid {
+    display:grid;
+    grid-template-rows: 2;
+    grid-template-columns: 4;
+    grid-gap: 20px;
+}
+
+#kaunas {
+    grid-column: 1/3;
+    grid-row: 1;
+   
+}
+
+#klaipeda {
+    grid-column: 3/5;
+    grid-row: 1;
+    
+}
+
+#fasadai {
+    grid-column: 1/3;
+    grid-row: 2;
+   
+}
+
+#sandelis {
+    grid-column: 3/5;
+    grid-row: 2;
+    
+}
+
+.foto2{
+    
+    width: 400px;
+   max-width: 100%;
+    
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    font-size:18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.flex2 {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.kontaktai, .kontaktai2 {
+    
+    text-decoration: none;
+    list-style: none;
+    padding-left: 0px;
+}
+
+.kontaktai li {
+    font-size: 15px;
+    margin-top:10px;
+}
+
+
+.kontaktai a, p, .kontaktai2 a, p {
+    text-decoration: none;
+    color: #b3b3b3;
+}
+
+.kontaktai a:hover {
+    color: white;
+}
+
+.darbo-laikas, .rekvizitai {
+    
+    list-style: none;
+    text-decoration: none;
+    font-size: 15px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.darbo-laikas li, .rekvizitai li {
+    margin-top:5px;
+}
+
+.darbo-laikas li{
+    margin-bottom: 10px;
+}
+
+
+/* susisiekite dalis*/
+
+#line {
+    border: 1px solid #b3b3b3;
+    width: 45px;
+}
+
+h1, p {
+    color: white;
+}
+
+/*forma */
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
+    margin-top:50px;
+}
+
+.flex3 {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-right: 20px;
+}
+
+#max{
+    height: 250px;
+}
+
+.zymeklis {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.zymeklis p {
+    margin-top: 0px;
+}
+
+input[type=checkbox] {
+    height: 20px;
+    width: 20px;
+    outline: none;
+    color: black;
+    border-radius: 0%;
+    
+}
+
+
+input[type=checkbox] + label:before {
+    display: inline-block;
+}
+
+
+label {
+    color: white;
+}
+
+input{
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid #333333;
+    box-sizing: border-box;
+    outline: none;
+    background-color:#333333;
+    color:white;
+}
+
+input[type=text]:focus {
+    box-shadow: 0px 0px 3px 0px #b3b3b3;
+}
+
+input[type=mail]:focus {
+    box-shadow: 0px 0px 3px 0px #b3b3b3;
+
+}
+
+input[type=tel]:focus {
+    box-shadow: 0px 0px 3px 0px #b3b3b3;
+}
+
+textarea{
+    border: 1px solid #333333;
+    background-color:#333333;
+    max-width: 420px;
+    font-size: 16px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 120px;
+    min-height: 120px;
+    padding:20px;
+    font-size: 16px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+textarea:focus {
+    box-shadow: 0px 0px 3px 0px #b3b3b3;
+    outline: none;
+    font-size: 16px;
+    max-width: 420px;
+    box-sizing: border-box;
+    min-height: 120px;
+    font-size: 16px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+button {
+    margin-top: 20px;
+    background-color: white;
+    color:#333333;
+    width:100%;
+    border: none;
+    box-sizing: border-box;
+    padding: 14px;
+    font-size: 18px;
+    transition:0.5s ease; 
+}
+
+button:hover{
+    cursor: pointer;
+    color:white;
+    background-color:#333333; 
+}
+
+::-webkit-input-placeholder{
+    color:white;
+}
+
+::-ms-input-placeholder{
+    color:white;
+}
+
+
+::-moz-input-placeholder{
+    color:white;
+}
+
+#map {
+    
+    height: 100%;
+    width: 100%;
+}
+
+#info_vilnius {
+    position: absolute;
+    background-color: #1a1a1a;
+    transform: translate(5%,-120%);
+    z-index: 8;
+    display:block;
+    width: auto;
+}
+
+#info_vilnius * {
+   margin-bottom: 10px;
+}
+
+#info_vilnius h2{
+    margin-bottom: 30px;
+}
+
+#info_vilnius .kontaktai2 {
+     margin-bottom: 30px;
+}
+
+
+.flex4 {
+    display: flex;
+    flex-direction: row;
+}
+
+.rekvizitai {
+    margin-right: 10px;
+}
+
+.flex4 .darbo-laikas {
+    
+    padding:0px;
+    margin-left: 5px;
+}
+
+.flex4 .rekvizitai {
+    margin-left: 0px;
+    padding: 0px;
+    margin-left: 5px;
+   
+}
+
+.vilnius, .kontaktai2 {
+    margin-left: 5px;
+}
+
+#vilnius {
+    margin-bottom: 50px;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    
+
+    
+    #vilnius {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    #foto, .map0 {
+        width: 100%;
+        height: 600px;
+    }
+    
+    #info_vilnius {
+        transform: translate(5%,-120%);
+        
+    }
+   
+    #grid {
+    display:grid;
+    grid-template-rows: auto;
+    grid-template-columns: 4;
+    grid-gap: 20px;
+}
+
+#kaunas {
+    grid-column: 1/5;
+    grid-row: 1;
+    margin-top:650px;
+   
+}
+
+#klaipeda {
+    grid-column: 1/5;
+    grid-row: 2;
+    
+}
+
+#fasadai {
+    grid-column: 1/5;
+    grid-row: 3;
+   
+}
+
+#sandelis {
+    grid-column: 1/5;
+    grid-row: 4;
+    
+}
+
+    
+}
+
+@media only screen and (max-width: 600px) {
+    #turinys {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    #vilnius {
+        margin-right: 0px;
+
+    }
+    
+    #info_vilnius {
+      width: auto;
+/*       transform: translate(5%,230%);*/
+        transform: translate(0,0);
+        position: relative;
+        width: 100%;
+    }
+    
+    #kaunas {
+    grid-column: 1/5;
+    grid-row: 1;
+    margin-top:900px;
+   
+}
+    .foto2 {
+        width: auto;
+    }
+    
+    .forma {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    textarea {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+}
+
+
+

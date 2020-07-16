@@ -1,0 +1,21 @@
+/* neuzbaigta html */
+
+.kontaineris {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+p {
+    font-weight: 700;
+}
+
+.list {
+    align-self: center;
+    text-align: start;
+    font-weight: 700;
+}
+
+a {
+    color:brown;
+}
